@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import Nigredo from '../views/Nigredo.vue'
-import Albedo from '../views/Albedo.vue'
-import Rubedo from '../views/Rubedo.vue'
-import EmeraldTablet from '../components/EmeraldTablet.vue'
+import Home from './views/Home.vue'
+import Nigredo from './views/Nigredo.vue'
+import Albedo from './views/Albedo.vue'
+import Rubedo from './views/Rubedo.vue'
+import EmeraldTablet from './components/EmeraldTablet.vue'
 
 const routes = [
     {
