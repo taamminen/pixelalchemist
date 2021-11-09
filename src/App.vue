@@ -18,10 +18,10 @@ export default {
 
 <style>
 html {
+    color: white;
     background-image: url(assets/background.gif);
     background-repeat: repeat;
-    color: white;
-    font-family: alchimic;
+
 }
 .main {
     margin: 0 auto;

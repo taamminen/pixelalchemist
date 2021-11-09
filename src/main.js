@@ -8,9 +8,8 @@ app.config.globalProperties.nigredo = 0
 app.config.globalProperties.albedo = 0
 app.config.globalProperties.rubedo = 0
 
-
 app.config.globalProperties.symbols = {
-    
+
 }
 
 app.use(router).mount('#app')
