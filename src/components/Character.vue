@@ -6,7 +6,7 @@
             <p><i>Нигредо: {{ this.nigredo }}</i> <br />
             <i>Альбедо: {{ this.albedo }}</i> <br />
             <i>Рубедо: {{ this.rubedo }}</i></p>
-            <p><i><router-link to="/emerald">скрижаль</router-link></i></p>
+            <p><i>Уровень камня: 0</i></p>
         </div>
     </div>
 </template>

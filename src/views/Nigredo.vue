@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import MinesweeperGame from '@/components/MinesweeperGame.vue'
+import MinesweeperGame from '@/components/minesweeper/MinesweeperGame.vue'
 
 export default {
     name: 'Nigredo',

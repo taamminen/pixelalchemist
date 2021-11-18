@@ -11,8 +11,4 @@ export default {
 </script>
 
 <style scoped>
-html {
-    background-image: url(../assets/albedo.jpg);
-    background-repeat: repeat;
-}
 </style>

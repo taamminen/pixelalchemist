@@ -3,7 +3,6 @@ import Home from './views/Home.vue'
 import Nigredo from './views/Nigredo.vue'
 import Albedo from './views/Albedo.vue'
 import Rubedo from './views/Rubedo.vue'
-import EmeraldTablet from './components/EmeraldTablet.vue'
 
 const routes = [
     {
@@ -17,7 +16,7 @@ const routes = [
         component: Nigredo
     },
     {
-        path: '/',
+        path: '/albedo',
         name: 'Albedo',
         component: Albedo
     },
@@ -26,11 +25,6 @@ const routes = [
         name: 'Rubedo',
         component: Rubedo
     },
-    {
-        path: '/emerald',
-        name: 'EmeraldTablet',
-        component: EmeraldTablet
-    }
 ]
 
 const router = createRouter({
