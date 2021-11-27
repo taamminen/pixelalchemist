@@ -3,7 +3,7 @@
         <h1>Пожилая алхимия</h1>
         <p class="level-link"><router-link to="/nigredo">нигредо</router-link> <router-link to="albedo">альбедо</router-link> <router-link to="rubedo">рубедо</router-link></p>
         <p><img src="../assets/alchemist.jpg" /></p>
-        <Character />
+        <Character :nigredo="nigredo" :albedo="albedo" :rubedo="rubedo" />
     </div>
 </template>
 
@@ -12,9 +12,7 @@ import Character from '@/components/Character.vue'
 
 export default {
   name: 'Main',
-  props: {
-
-  },
+  props: ['nigredo', 'albedo', 'rubedo'],
   components: {
     Character
   }

@@ -2,10 +2,10 @@
     <div class="minesweeper">
         <div class="minesweeper-status">
             <div class="minesweeper-bombcount">
-                {{bombCount}}
+                {{ bombCount }}
             </div>
-            <a href="#" @click.prevent="initGrid">
-                &#9786;
+            <a class="reset" href="#" @click.prevent="initGrid">
+                ЗАНОВО
             </a>
             <minesweeper-timer class="minesweeper-timer" :finished="finished"></minesweeper-timer>
         </div>
@@ -163,7 +163,6 @@ export default {
                 return;
             }
             if (cell.hasBomb) {
-                // todo bomb!
                 const { grid } = this;
                 grid.forEach((checkCell) => {
                     if (checkCell.hasBomb) {
@@ -171,6 +170,7 @@ export default {
                     }
                 });
                 this.finished = true;
+                this.$emit('addNigredo');
                 return;
             }
 
@@ -239,9 +239,9 @@ export default {
 </script>
 
 <style lang="scss">
-        minesweeper-cell {
-                color: white;
-        }
+    minesweeper-cell {
+        color: white;
+    }
     .minesweeper {
         &-status {
             display: flex;
@@ -252,6 +252,13 @@ export default {
                 flex: 1;
                 text-align: center;
             }
+        }
+
+        .minesweeper-status {
+            padding: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 2rem;
         }
 
         &-grid {

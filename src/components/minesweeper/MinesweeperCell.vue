@@ -1,10 +1,18 @@
 <template>
     <div class="minesweeper-cell" :class="getClass()">
         <div v-if="cell.isOpen && cell.bombCount">
-            {{ cell.bombCount }}
+            <div style="color:blue" v-if="cell.bombCount == 1">
+                {{ cell.bombCount }}
+            </div>
+            <div style="color:green" v-else-if="cell.bombCount == 2">
+                {{ cell.bombCount }}
+            </div>
+            <div style="color:red" v-else-if="cell.bombCount == 3">
+                {{ cell.bombCount }}
+            </div>
         </div>
         <div v-if="cell.hasFlag">
-            &#9873;
+            |>
         </div>
     </div>
 </template>
@@ -48,11 +56,13 @@ export default {
             min-height: 35px;
             min-width: 35px;
             background-color: #95a5a6;
+            border: 8px solid;
+            border-color: #fff #808080 #808080 #fff;
+            font-weight: bold;
         }
 
         &-bomb {
             background: #e74c3c;
-            content: '💣';
         }
 
         &-open {
