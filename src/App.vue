@@ -14,7 +14,6 @@ export default {
     },
     methods: {
         addNigredo() {
-            console.log(13);
             this.nigredo++;
         }
     }
