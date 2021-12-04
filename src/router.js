@@ -25,6 +25,10 @@ const routes = [
         name: 'Rubedo',
         component: Rubedo,
     },
+    {
+        path: "/:catchAll(.*)",
+        redirect: '/'
+    }
 ]
 
 const router = createRouter({

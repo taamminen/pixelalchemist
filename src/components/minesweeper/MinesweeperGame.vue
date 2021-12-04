@@ -109,6 +109,7 @@ export default {
             if (!remainingGrid) {
                 this.finished = true;
                 this.won = true;
+                this.getPoints();
             }
         },
         addFlag(cell) {
@@ -140,7 +141,6 @@ export default {
             if (!cell.bombCount) {
                 return;
             }
-
             const { grid } = this;
             let flagCount = 0;
             cell.neighborhood.forEach((j) => {
@@ -170,7 +170,6 @@ export default {
                     }
                 });
                 this.finished = true;
-                this.$emit('addNigredo');
                 return;
             }
 
@@ -183,7 +182,6 @@ export default {
             if (cell.bombCount !== 0 && force !== true) {
                 return;
             }
-
             const { grid } = this;
             cell.neighborhood.forEach((i) => {
                 this.clickCell(grid[i], i);
@@ -223,6 +221,15 @@ export default {
             }
             return i + (y * cols + x);
         },
+        getPoints() {
+            if (this.cols == 9) {
+                this.$emit('addNigredo');
+            } else if (this.cols == 16) {
+                this.$emit('addAlbedo');
+            } else if (this.cols == 30) {
+                this.$emit('addRubedo');
+            }
+        }
     },
     watch: {
         rows() {

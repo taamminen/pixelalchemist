@@ -22,7 +22,11 @@ export default {
             else if (this.albedo <= this.nigredo && this.albedo <= this.rubedo)
                 return this.albedo;
             else return this.rubedo;
-
+        }
+    },
+    watch: {
+        level() {
+            console.log('YEAEAAH');
         }
     }
 }

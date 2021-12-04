@@ -26,4 +26,7 @@ export default {
         font-weight: bold;
         font-size: 2rem;
     }
+    .main {
+        max-width: 732px;
+    }
 </style>

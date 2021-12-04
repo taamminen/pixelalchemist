@@ -1,5 +1,6 @@
 <template>
-    <router-view v-on:addNigredo="addNigredo" :nigredo="nigredo" :albedo="albedo" :rubedo="rubedo" />
+    <router-view v-on:addNigredo="addNigredo" v-on:addAlbedo="addAlbedo"
+        v-on:addRubedo="addRubedo" :nigredo="nigredo" :albedo="albedo" :rubedo="rubedo" />
 </template>
 
 <script>
@@ -15,6 +16,12 @@ export default {
     methods: {
         addNigredo() {
             this.nigredo++;
+        },
+        addAlbedo() {
+            this.albedo++;
+        },
+        addRubedo() {
+            this.rubedo++;
         }
     }
 }
@@ -26,16 +33,15 @@ export default {
         background-image: url(assets/background.gif);
         background-repeat: repeat;
     }
-    .main {
-        margin: 0 auto;
-        max-width: 732px;
-        font-size: 1rem;
-        padding: 20px 20px;
-        text-align: center;
-    }
     @font-face {
         font-family: 'alchimic';
         src: url('assets/alchimic.ttf');
+    }
+    .main {
+        margin: 0 auto;
+        font-size: 1rem;
+        padding: 20px 20px;
+        text-align: center;
     }
     a, h1, h2 {font-family: alchimic;}
     img, p, pre {max-width: 100%;}

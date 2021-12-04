@@ -53,8 +53,8 @@ export default {
             display: flex;
             font-size: 1.3em;
             justify-content: center;
-            min-height: 35px;
-            min-width: 35px;
+            min-height: 10px;
+            min-width: 10px;
             background-color: #95a5a6;
             border: 8px solid;
             border-color: #fff #808080 #808080 #fff;
