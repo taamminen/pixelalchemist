@@ -2,11 +2,11 @@
     <div class="character">
         <h2>Ваш прогресс</h2>
         <div class="image-block">
-            <img src="../assets/character.jpg" />
+            <img class="avatar" src="../assets/character.jpg" />
             <p><i><a>Нигредо:</a> {{ this.nigredo }}</i> <br />
             <i><a>Альбедо:</a> {{ this.albedo }}</i> <br />
             <i><a>Рубедо:</a> {{ this.rubedo }}</i></p>
-            <p><i><a>Уровень камня:</a> {{ this.level }}</i></p>
+            <p><i><a><img src="../assets/eye.png" width="30" /> Уровень камня:</a> {{ this.level }}</i></p>
         </div>
     </div>
 </template>
@@ -33,8 +33,8 @@ export default {
 </script>
 
 <style scoped>
-    p {font-size: 2rem;text-align: left;}
-    img {width: 200px;float: left;}
-    i {padding-left: 20px;}
-    h2 {font-size: 3rem;}
+    p {font-size:2rem;text-align:left}
+    .avatar {width: 200px;float:left}
+    i {padding-left:20px}
+    h2 {font-size:3rem}
 </style>

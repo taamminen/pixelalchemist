@@ -21,13 +21,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-.main {
-    margin: 0 auto;
-    max-width: 1280px;
-    font-size: 1rem;
-    padding: 20px 20px;
-    text-align: center;
-}
-</style>

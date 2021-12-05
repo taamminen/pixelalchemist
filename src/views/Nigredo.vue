@@ -21,9 +21,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-.main {
-    max-width: 640px;
-}
-</style>

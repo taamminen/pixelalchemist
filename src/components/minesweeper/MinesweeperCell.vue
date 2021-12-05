@@ -12,7 +12,7 @@
             </div>
         </div>
         <div v-if="cell.hasFlag">
-            |>
+            >
         </div>
     </div>
 </template>
@@ -51,12 +51,12 @@ export default {
             background: rgba(0, 0, 0, 0.1);
             cursor: pointer;
             display: flex;
-            font-size: 1.3em;
+            padding: 0;
             justify-content: center;
-            min-height: 10px;
-            min-width: 10px;
+            min-height: 20px;
+            min-width: 20px;
             background-color: #95a5a6;
-            border: 8px solid;
+            border: 3px solid;
             border-color: #fff #808080 #808080 #fff;
             font-weight: bold;
         }

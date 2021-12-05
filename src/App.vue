@@ -42,6 +42,7 @@ export default {
         font-size: 1rem;
         padding: 20px 20px;
         text-align: center;
+        max-width: 800px;
     }
     a, h1, h2 {font-family: alchimic;}
     img, p, pre {max-width: 100%;}

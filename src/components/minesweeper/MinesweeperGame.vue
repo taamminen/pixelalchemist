@@ -5,7 +5,7 @@
                 {{ bombCount }}
             </div>
             <a class="reset" href="#" @click.prevent="initGrid">
-                ЗАНОВО
+                <img src="../../assets/potion.png" width="30" />
             </a>
             <minesweeper-timer class="minesweeper-timer" :finished="finished"></minesweeper-timer>
         </div>
@@ -116,6 +116,9 @@ export default {
             if (this.finished) {
                 return;
             }
+            if (this.bombCount == 0) {
+                return;
+            }
             if (cell.isOpen) {
                 return;
             }
@@ -157,6 +160,8 @@ export default {
                 return;
             }
             if (cell.hasFlag) {
+                cell.hasFlag = false;
+                this.bombCount++;
                 return;
             }
             if (cell.isOpen) {
