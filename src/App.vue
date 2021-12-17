@@ -44,8 +44,8 @@ export default {
         text-align: center;
         max-width: 800px;
     }
-    a, h1, h2 {font-family: alchimic;}
-    img, p, pre {max-width: 100%;}
-    h1 {font-size: 4rem;}
-    a {color: white;}
+    a, h1, h2 {font-family:alchimic}
+    img, p, pre {max-width:100%}
+    h1 {font-size:4rem}
+    a {color:white}
 </style>

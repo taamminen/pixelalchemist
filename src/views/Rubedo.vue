@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <h1><router-link to="/">Рубедо</router-link></h1>
-        <minesweeper-game v-on:addRubedo="addRubedo" cols="30" rows="16" bombs="1" />
+        <minesweeper-game v-on:addRubedo="addRubedo" cols="30" rows="16" bombs="99" />
         <Character :nigredo="nigredo" :albedo="albedo" :rubedo="rubedo" />
     </div>
 </template>
