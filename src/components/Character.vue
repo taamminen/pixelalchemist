@@ -23,18 +23,13 @@ export default {
                 return this.albedo;
             else return this.rubedo;
         }
-    },
-    watch: {
-        level() {
-            console.log('YEAEAAH');
-        }
     }
 }
 </script>
 
 <style scoped>
     p {font-size:2rem;text-align:left}
-    .avatar {width: 200px;float:left}
+    .avatar {width:200px;float:left}
     i {padding-left:20px}
     h2 {font-size:3rem}
 </style>
