@@ -33,10 +33,12 @@ export default {
         background-image: url(assets/background.gif);
         background-repeat: repeat;
     }
+
     @font-face {
         font-family: 'alchimic';
         src: url('assets/alchimic.ttf');
     }
+
     .main {
         margin: 0 auto;
         font-size: 1rem;
@@ -44,8 +46,20 @@ export default {
         text-align: center;
         max-width: 800px;
     }
-    a, h1, h2 {font-family:alchimic}
-    img, p, pre {max-width:100%}
-    h1 {font-size:4rem}
-    a {color:white}
+
+    a, h1, h2 {
+        font-family: alchimic;
+    }
+
+    img, p, pre {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    a {
+        color: white;
+    }
 </style>

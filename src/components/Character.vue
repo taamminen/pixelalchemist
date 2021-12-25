@@ -28,8 +28,21 @@ export default {
 </script>
 
 <style scoped>
-    p {font-size:2rem;text-align:left}
-    .avatar {width:200px;float:left}
-    i {padding-left:20px}
-    h2 {font-size:3rem}
+    p {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .avatar {
+        width: 200px;
+        float: left;
+    }
+
+    i {
+        padding-left: 20px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
 </style>

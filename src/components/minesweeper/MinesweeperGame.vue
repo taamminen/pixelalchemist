@@ -254,6 +254,7 @@ export default {
     minesweeper-cell {
         color: white;
     }
+
     .minesweeper {
         &-status {
             display: flex;
