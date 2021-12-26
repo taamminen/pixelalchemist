@@ -6,7 +6,7 @@
             <p><i><a>Нигредо:</a> {{ this.nigredo }}</i> <br />
             <i><a>Альбедо:</a> {{ this.albedo }}</i> <br />
             <i><a>Рубедо:</a> {{ this.rubedo }}</i></p>
-            <p><i><a><img src="../assets/eye.png" width="30" /> Уровень камня:</a> {{ this.level }}</i></p>
+            <p><i><a><img src="../assets/stone.png" width="30" /> Уровень камня:</a> {{ this.level }}</i></p>
         </div>
     </div>
 </template>
